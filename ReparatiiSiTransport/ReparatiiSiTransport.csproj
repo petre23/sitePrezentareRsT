@@ -146,6 +146,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContactFormController.cs" />
     <Compile Include="Controllers\DocumentsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ItpController.cs" />
     <Compile Include="Controllers\JobsController.cs" />
     <Compile Include="Controllers\RepairsController.cs" />
@@ -199,6 +200,7 @@
     <Content Include="Views\Jobs\Index.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\ContactForm\ContactForm.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
