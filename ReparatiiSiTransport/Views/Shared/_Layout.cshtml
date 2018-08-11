@@ -3,44 +3,167 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Despre noi", "Index", "AboutUs")</li>
-                    <li>@Html.ActionLink("Acte auto", "Index", "Documents")</li>
-                    <li>@Html.ActionLink("ITP", "Index", "Itp")</li>
-                    <li>@Html.ActionLink("Transport intern si international", "Index", "Transport")</li>
-                    <li>@Html.ActionLink("Reparatii", "Index", "Repairs")</li>
-                    <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
-                    <li>@Html.ActionLink("Echipa noastra", "Index", "Team")</li>
-                    <li>@Html.ActionLink("Cariere", "Index", "Jobs")</li>
-                </ul>
-            </div>
+    <nav class="navbar navbar" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+        <a class="navbar-brand" href="#"><img src="~/Content/img/rp3.png" /></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li>@Html.ActionLink("Acasa", "Index", "Home")</li>
+                <li>@Html.ActionLink("Despre noi", "Index", "AboutUs")</li>
+                <li>@Html.ActionLink("Acte auto", "Index", "Documents")</li>
+                <li>@Html.ActionLink("ITP", "Index", "Itp")</li>
+                <li>@Html.ActionLink("Reparatii", "Index", "Repairs")</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Transport intern si international", "Index", "Transport")</li>
+                <li>@Html.ActionLink("Echipa noastra", "Index", "Team")</li>
+                <li>@Html.ActionLink("Cariere", "Index", "Jobs")</li>
+                <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <footer class="page-footer unique-color-dark">
+
+        <!-- Footer Links -->
+        <div class="footerSection">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-sm-3">
+
+                    <!-- Content -->
+                    <h6 class="subtitleFooter">DESPRE NOI</h6>
+                    <hr style="text-align:left !important">
+                    <p><span style="color: #e4e4e4;">Moba tehnic este o companie de transport rutier international infiintata in anul 2012 cu parc propriu de masini cu asigurare CMR / GLOBALA si departament de expeditii cu coordonatori de transport care pot comunica cu clientii dvs. externi...<br/>
+                    <strong> <a href="/despre-noi" style="color:#08cdf0;">Citeste&nbsp;mai multe…</a></strong></span></p>
+                </div>
+
+
+                <!-- Grid column -->
+                <div class="col-sm-3">
+
+                    <!-- Links -->
+                    <h6 class="subtitleFooter">PROGRAM DE LUCRU</h6>
+                    <hr style="text-align:left !important">
+                    <p>
+                        <span style="color: #e4e4e4;">
+                            <strong>ITP</strong>
+                        </span>
+                    </p> <p><span style="color: #e4e4e4;">Luni-Vineri :&nbsp;09:00 - 18:00<br> Sambata-Duminica: Inchis</span></p>
+                    <p>
+                        <span style="color: #e4e4e4;">
+                            <strong>Service</strong>
+                        </span>
+                    </p> <p><span style="color: #e4e4e4;">Luni-Vineri : 9:00 - 18:00<br></span></p>
+                    <p>
+                        <span style="color: #e4e4e4;">
+                            <strong>Acte auto</strong>
+                        </span>
+                    </p> <p><span style="color: #e4e4e4;">Luni-Vineri : 8:30 - 16:30</span></p>
+
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-sm-3">
+                    <h6 class="subtitleFooter">CONTACT</h6>
+                    <hr style="text-align:left !important">
+
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Romania, Craiova
+                    </p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> +40 (0)742 223 088
+                    </p>
+                    <p>
+                        <i class="fa fa-map-marker fa-"></i> Strada Henry Ford, Craiova
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> transport.moba@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> florentina.moba@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> acte.autoconsult@gmail.com
+                    </p>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="footerLogo">
+                        <img src="./Content/img/logo-footer.png" style="width:100%;">
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footerCopyright">
+            <div class="container">
+
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-fb mx-1">
+                            <i class="fa fa-facebook"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-tw mx-1">
+                            <i class="fa fa-twitter"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-gplus mx-1">
+                            <i class="fa fa-google-plus"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-li mx-1">
+                            <i class="fa fa-linkedin"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-dribbble mx-1">
+                            <i class="fa fa-dribbble"> </i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Social buttons -->
+
+            </div>
+            © 2018 Copyright:
+            <a href="#"> MagicWeb24</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
 </body>
 </html>

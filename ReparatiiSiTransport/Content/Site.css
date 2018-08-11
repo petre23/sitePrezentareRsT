@@ -1,12 +1,8 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -30,4 +26,63 @@ textarea {
     background: #f8f9fa;
     padding: 15px;
     box-shadow: 0 0 4px #ccc;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    background: #0c224f;
+    border-radius:0px;
+    border-bottom:solid 2px #fff;
+}
+
+.navbar li a{
+    color:#fff;
+    padding:25px 30px;
+    font-size:16px;
+}
+
+.navbar li a:hover {
+    color: #08cdf0;
+    background: none;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.navbar-toggle {
+    z-index: 1;
+}
+
+.navbar-toggle .icon-bar {
+    background: #08cdf0
+}
+
+
+.footerSection {
+    background-color: #0c224f;
+    color: white;
+    text-align: left;
+    padding: 25px 30px;
+}
+
+
+.footerCopyright {
+    background-color: #151515;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+    color: white;
+}
+
+.subtitleFooter {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
 }
