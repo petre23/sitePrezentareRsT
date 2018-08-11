@@ -1,23 +1,53 @@
 ﻿<div class="container">
     <div class="form-sec">
         <h4>Creaza o programare:</h4>
-        <form name="qryform" id="qryform">
+        <form name="qryform" id="qryform" onsubmit="submitData();">
             <div class="form-group">
                 <input type="text" class="form-control" id="name" placeholder="Nume*" name="name" required>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="name" placeholder="Email*" name="email" required>
+                <input type="email" class="form-control" id="email" placeholder="Email*" name="email" required>
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="phone" placeholder="Numar telefon*" name="phone" required>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Subiect*" name="subject" required>
+                <input type="text" class="form-control" id="subject" placeholder="Subiect*" name="subject" required>
             </div>
             <div class="form-group">
-                <textarea name="issues" class="form-control" id="iq" placeholder="Mesaj"></textarea>
+                <textarea name="issues" class="form-control" id="message" placeholder="Mesaj"></textarea>
             </div>
             <button type="submit" class="btn btn-default">Programeaza</button>
         </form>
     </div>
 </div>
+
+<script type="text/javascript">
+    function submitData() {
+        $.ajax({
+            type: 'post',
+            dataType: 'json',
+            url: "/ContactForm/SendEmail",
+            data: getData(),
+            success: function (res) {
+                if (res) {
+                    alert("Un email a fost trimis pentru programare! Veti fi contactat in cel mai scurt timp de un membru al echipei pentru confirmare.");
+                } else {
+                    alert("Email-ul nu a fost trimis, va rugam sa reincercati!");
+                }
+            }
+        });
+    }
+
+    function getData()
+    {
+        var data = {
+            FromEmailAddress: $("#email").val(),
+            Name: $("#name").val(),
+            PhoneNumber: $("#phone").val(),
+            Subject: $("#subject").val(),
+            Message: $("#message").val()
+        };
+        return data;
+    }
+</script>
