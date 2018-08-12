@@ -23,6 +23,10 @@
 </div>
 
 <script type="text/javascript">
+    $("#qryform").on('submit', function (e)
+    {
+        return false;
+    });
     function submitData() {
         $.ajax({
             type: 'post',
@@ -30,8 +34,9 @@
             url: "/ContactForm/SendEmail",
             data: getData(),
             success: function (res) {
-                if (res) {
+                if (res.successful) {
                     alert("Un email a fost trimis pentru programare! Veti fi contactat in cel mai scurt timp de un membru al echipei pentru confirmare.");
+                    clearFields();
                 } else {
                     alert("Email-ul nu a fost trimis, va rugam sa reincercati!");
                 }
@@ -49,5 +54,13 @@
             Message: $("#message").val()
         };
         return data;
+    }
+
+    function clearFields() {
+        $("#email").val("");
+        $("#name").val("");
+        $("#phone").val("");
+        $("#subject").val("");
+        $("#message").val("");
     }
 </script>

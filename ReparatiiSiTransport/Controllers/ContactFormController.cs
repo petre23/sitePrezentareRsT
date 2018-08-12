@@ -19,7 +19,9 @@ namespace ReparatiiSiTransport.Controllers
         [HttpPost]
         public ActionResult SendEmail(EmailModel email)
         {
-            return Json(new { successful = new EmailProcessor().SendEmail(email).ToString()}, JsonRequestBehavior.AllowGet);
+
+            return Json(new { successful = new EmailProcessor().SendEmail(email) }, JsonRequestBehavior.AllowGet);
+
         }
     }
 }

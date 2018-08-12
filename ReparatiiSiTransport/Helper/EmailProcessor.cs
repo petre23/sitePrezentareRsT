@@ -52,15 +52,15 @@ namespace ReparatiiSiTransport.Helper
 		</tr>
         <tr style='padding:20px;background-color:#0c224f;'>
              <div style='padding:20px;font-size:14px;background-color:white'>
-  	                <div style='color:black'><b>Nume client</b>: {1}</div>
-                    <div style='color:black'><b>Adresa email client</b>: {2}</div>
-                    <div style='color:black'><b>Mesaj</b>: {3}</div>
-                    <div style='color:black'><b>Numar telefon</b>: {4}</div>
+  	                <div style='color:black;margin-left:10px'><b>Nume client</b>: {1}</div>
+                    <div style='color:black;margin-left:10px'><b>Adresa email client</b>: {2}</div>
+                    <div style='color:black;margin-left:10px'><b>Mesaj</b>: {3}</div>
+                    <div style='color:black;margin-left:10px'><b>Numar telefon</b>: {4}</div>
              </div>
+            <img height='70' width='110' src='http://test.reparatiisitransport.ro/logo-footer.png' />
         </tr>
     </tbody></table></body></html>", email.Subject, email.Name,email.FromEmailAddress,email.Message,email.PhoneNumber);
                 message.Body = ss_body;
-
                 // Send SMTP mail
                 smtpClient.Send(message);
                 return true;
