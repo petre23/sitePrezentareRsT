@@ -37,29 +37,29 @@ namespace ReparatiiSiTransport.Helper
 
                 // Message body content
                 string ss_body = string.Format(@"<html><body><table width='100%' bgcolor='#ffffff' border='0' cellpadding='10' cellspacing='0'>
-<tbody><tr>
-  <td>
-				</td>
-			</tr>
+<tbody>
       <tr>
 				<td align='center' valign='top'>
 						<table border='0' cellpadding='0' cellspacing='0' width='100%' >
 							<tbody>
               <tr>
-			<td valign='top' style='background-color:#0c224f;padding:10px;'>
-				  <h2 style='color:white;'>Cerere programare noua</h2>
-			</td>
+			<td valign='top' style='background-color:#0c224f;padding:20px;'>
+				  <h2 style='color:white;font-family:Arial, Helvetica, sans-serif;'>Cerere programare noua</h2>
+            </td>
 		</tr>
-        <tr style='padding:20px;background-color:#0c224f;'>
-             <div style='padding:20px;font-size:14px;background-color:white'>
-  	                <div style='color:black;margin-left:10px'><b>Nume client</b>: {1}</div>
-                    <div style='color:black;margin-left:10px'><b>Adresa email client</b>: {2}</div>
-                    <div style='color:black;margin-left:10px'><b>Mesaj</b>: {3}</div>
-                    <div style='color:black;margin-left:10px'><b>Numar telefon</b>: {4}</div>
-             </div>
-            <img height='70' width='110' src='http://test.reparatiisitransport.ro/logo-footer.png' />
+        <tr style='padding:5px;background-color:white;'>
+            <div style='padding:20px;font-size:14px;background-color:white;border:10px solid #0c224f;'>
+  	            <div style='color:black;margin-left:10px'><b>Nume client</b>: {1}</div>
+                <div style='color:black;margin-left:10px'><b>Adresa email client</b>: {2}</div>
+                <div style='color:black;margin-left:10px'><b>Mesaj</b>: {3}</div>
+                <div style='color:black;margin-left:10px'><b>Numar telefon</b>: {4}</div>
+            </div>
         </tr>
-    </tbody></table></body></html>", email.Subject, email.Name,email.FromEmailAddress,email.Message,email.PhoneNumber);
+        <tr style='padding:5px;background-color:#0c224f;'>
+            <img height='70' width='110' align='right' src='http://test.reparatiisitransport.ro/logo-footer.png' />
+        </tr>
+    </tbody></table>
+    </body></html>", email.Subject, email.Name,email.FromEmailAddress,email.Message,email.PhoneNumber);
                 message.Body = ss_body;
                 // Send SMTP mail
                 smtpClient.Send(message);
