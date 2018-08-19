@@ -3,5 +3,63 @@
     ViewBag.Title = "ITP";
 }
 
-<h2>ITP</h2>
 
+
+<div class="container">
+    <p class="header-title">Statie ITP</p>
+    <hr />
+    <div>
+        Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective. Nu doar că a supravieţuit timp de cinci secole, dar şi a facut saltul în tipografia electronică practic neschimbată. A fost popularizată în anii '60 odată cu ieşirea colilor Letraset care conţineau pasaje Lorem Ipsum, iar mai recent, prin programele de publicare pentru calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum.
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <h4>ACTE NECESARE PENTRU ITP</h4>
+            <div class="well" >
+                <ul class="list-group checked-list-box">
+                    <li class="list-group-item"><i class="fa fa-check-square"></i>  Certificat de inmatriculare al autovehiculului (talon) - <b>original, sau dupa caz, autorizaţia provizorie de circulaţie</b> </li>
+                    <li class="list-group-item"><i class="fa fa-check-square"></i>  Polita R.C.A. (Asigurare de Raspundere Civila Auto) valabila la data inspectiei - <b>original</b></li>
+                    <li class="list-group-item"><i class="fa fa-check-square"></i>  Buletin de identitate a conducatorului auto care prezinta autoturismul la inspectie - <b>original</b></li>
+                    <li class="list-group-item"><i class="fa fa-check-square"></i>  Cartea de identitate a autovehiculului (CIV) - <b>original</b></li>
+                    <li class="list-group-item"> * Daca proprietarul este o societate de leasing se accepta copie dupa cartea de identitate a autovehiculului stampilata de proprietar, cu mentiunea „conform cu originalul”</li>
+                  
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div style="margin-top:30px;">
+                <img src="~/Content/img/itpPic.jpg" alt="">
+            </div>
+           
+        </div>
+        </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <h4>Periodicitate I.T.P. = Intervalul sau perioada de timp la care este obligatorie efectuarea inspectiei tehnice periodice, in functie de categoria vehiculelor:</h4>
+
+            <div class="well">
+                <ul class="list-group checked-list-box">
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> autovehicule destinate transportului de persoane care au, în afara locului conducătorului, mai mult de 8 locuri pe scaune - la 6 luni; </li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i>  autovehicule destinate transportului de persoane care au, în afara locului conducătorului, cel mult 8 locuri pe scaune - la 2 ani;</li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> autovehicule utilizate pentru transportul de persoane in regim de taxi, în regim de inchiriere şi pentru învaţarea conducerii auto - la 6 luni şi autovehicule speciale ambulanţa - la 1 an;</li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> autovehicule destinate transportului de mărfuri, având o masă totală maximă autorizată mai mare de 3.500 kg - la 1 an;</li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> autovehicule cu cel puţin 4 roţi, destinate transportului de mărfuri, având o masă totală maximă autorizată care nu depaşeşte 3.500 kg, cu excepţia tractoarelor - la 1 an;</li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> remorci şi semiremorci având o masă totală maximă autorizată care nu depaşeşte 3.500 kg - la 2 ani;</li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> motociclete, mopede, autovehicule cu 3 roţi şi cvadricicluri - la 2 ani;</li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> tractoare având o masă totală maximă autorizată mai mare de 3.500 kg - la 1 an;</li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> tractoare având o masă totală maximă autorizată care nu depaşeşte 3.500 kg - la 2 ani;</li>
+                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i> remorci şi semiremorci apicole - la 3 ani.</li>
+                    <li class="list-group-item">
+                        *Autovehiculele destinate transportului de persoane care au, în afara locului conducătorului, mai mult de 8 locuri pe scaune, autovehiculele utilizate pentru transportul de persoane în regim de taxi, în regim de închiriere ş pentru învăţarea conducerii auto se supun primei inspecţii tehnice periodice la 1 an, dacă la data primei înmatriculari în România au fost noi.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            @{
+                Html.RenderPartial("~/Views/ContactForm/ContactForm.cshtml");
+            }
+
+        </div>
+    </div>
+    </div>
