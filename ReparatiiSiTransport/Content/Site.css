@@ -28,21 +28,56 @@ textarea {
 }
 
 .navbar {
+    border-radius: 0px;
     margin-bottom: 0px;
-    background: #0c224f;
-    border-radius:0px;
-    border-bottom:solid 2px #fff;
 }
 
-.navbar li a{
-    color:#fff;
-    padding:25px 30px;
-    font-size:16px;
+.main-nav {
+    background: #0c224f;
+    border-bottom: solid 2px #fff;
+}
+
+.info-nav {
+    background: #151515;
+}
+
+    .info-nav li {
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+        .info-nav li span {
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .info-nav li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+#transport-dep {
+    background: #ff6868;
+}
+
+#acte-dep {
+    background: #08cdf0;
+}
+
+.main-nav li a {
+    color: #fff;
+    padding: 25px 30px;
+    font-size: 16px;
 }
 
 .navbar li a:hover {
     color: #08cdf0;
     background: none;
+}
+
+.navbar li a:visited {
+    background-color: #0c224f;
 }
 
 .navbar-brand {
@@ -55,13 +90,14 @@ textarea {
     padding: 0;
 }
 
+
 .navbar-toggle {
     z-index: 1;
 }
 
-.navbar-toggle .icon-bar {
-    background: #08cdf0
-}
+    .navbar-toggle .icon-bar {
+        background: #08cdf0
+    }
 
 
 .footerSection {
@@ -84,6 +120,101 @@ textarea {
     font-weight: 500;
     font-size: 16px;
     text-align: left;
+}
+
+.despre-banner-top {
+    margin-top: 4%;
+}
+
+    .despre-banner-top img {
+        width: 100%;
+    }
+
+.despre-text {
+    margin-top: 6%;
+}
+
+    .despre-text p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .despre-text ul {
+        list-style: none;
+    }
+
+        .despre-text ul li:before {
+            content: '? ';
+        }
+
+.despre-photo {
+    margin-top: 5%;
+}
+
+    .despre-photo img {
+        width: 100%;
+    }
+
+.acte-panel {
+    margin-top: 6%;
+}
+
+.panel-group {
+    margin-bottom: 3%;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+}
+
+.panel-default > .panel-heading {
+    background: #536976; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.panel-title > a {
+    color: #fff;
+}
+
+ul.list-group.list-group-striped li:nth-of-type(odd) {
+    background: #fff;
+}
+
+ul.list-group.list-group-striped li:nth-of-type(even) {
+    background: #d7dcdf;
+}
+
+@media screen and (min-width: 1366px) {
+    .main-nav li a {
+        padding: 25px 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .main-nav {
+        margin-bottom: 15%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .main-nav {
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .main-nav li a {
+        font-size: 12px;
+        padding: 25px 6px;
+    }
+
+    .navbar-brand img {
+        width: 90px;
+        position: relative;
+        left: -30px;
+    }
 }
 
 

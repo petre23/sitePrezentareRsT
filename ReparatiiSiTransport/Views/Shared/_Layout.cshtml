@@ -4,13 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/jquery")
 </head>
 <body>
-    <nav class="navbar navbar" role="navigation">
+    <nav class="navbar info-nav">
+        <ul class="nav navbar-nav navbar-left">
+            <li><span id="transport-dep">Departament transport:</span> <span style="display:inline-block;"> <i class="fa fa-phone mr-3"></i> <a href="tel:0742 223 088">+40 (0)742 223 088</a></span> | <span style="display:inline-block;"><i class="fa fa-envelope mr-3"></i><a href="mailto:transport.moba@gmail.com"> transport.moba@gmail.com</a></span></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><span id="acte-dep">Departament acte auto:</span> <span style="display:inline-block;"> <i class="fa fa-envelope mr-3"></i> <a href="mailto:acte.autoconsult@gmail.com ">acte.autoconsult@gmail.com</a></span></li>
+        </ul>
+    </nav>
+    <nav class="navbar main-nav" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -21,7 +29,7 @@
             </button>
 
         </div>
-        <a class="navbar-brand" href="#"><img src="~/Content/img/rp3.png" /></a>
+        <a class="navbar-brand" href="@Url.Action("Index", "Home", null)"><img src="~/Content/img/rp3.png" /></a>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
 
@@ -59,8 +67,12 @@
                     <!-- Content -->
                     <h6 class="subtitleFooter">DESPRE NOI</h6>
                     <hr style="text-align:left !important">
-                    <p><span style="color: #e4e4e4;">Moba tehnic este o companie de transport rutier international infiintata in anul 2012 cu parc propriu de masini cu asigurare CMR / GLOBALA si departament de expeditii cu coordonatori de transport care pot comunica cu clientii dvs. externi...<br/>
-                    <strong> <a href="/despre-noi" style="color:#08cdf0;">Citeste&nbsp;mai multe…</a></strong></span></p>
+                    <p>
+                        <span style="color: #e4e4e4;">
+                            Moba tehnic este o companie de transport rutier international infiintata in anul 2012 cu parc propriu de masini cu asigurare CMR / GLOBALA si departament de expeditii cu coordonatori de transport care pot comunica cu clientii dvs. externi...<br />
+                            <strong> <a href="/despre-noi" style="color:#08cdf0;">Citeste&nbsp;mai multe…</a></strong>
+                        </span>
+                    </p>
                 </div>
 
 
@@ -115,7 +127,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="footerLogo">
-                        <img src="~/Content/img/logo-footer.png" style="width:100%;">
+                        <img src="./Content/img/logo-footer.png" style="width:100%;">
                     </div>
                 </div>
                 <!-- Grid column -->
