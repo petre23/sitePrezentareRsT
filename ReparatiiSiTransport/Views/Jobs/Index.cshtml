@@ -3,5 +3,90 @@
     ViewBag.Title = "Jobs";
 }
 
-<h2>Jobs</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Hai in echipa Moba Tehnic!</h2>
+            <h4>Mai jos gasiti o lista cu posturile disponibile:</h4>
+            <note>Pentru a aplica pe unul din posturile disponibile, va rugam completati formularul din dreapta</note>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse-job1"><span class="fa fa-truck" aria-hidden="true"></span> Sofer TIR</a>
+                        </h4>
+                    </div>
+                    <div id="collapse-job1" class="panel-collapse collapse in">
+                        <h4 style="padding:10px; font-weight:bold;">CANDIDATUL IDEAL</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <h4 style="padding:10px; font-weight:bold;">DESCRIEREA JOBULUI</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse-job2"><span class="fa fa-info-circle" aria-hidden="true"></span> Inspector ITP</a>
+                        </h4>
+                    </div>
+                    <div id="collapse-job2" class="panel-collapse collapse">
+                        <h4 style="padding:10px; font-weight:bold;">CANDIDATUL IDEAL</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <h4 style="padding:10px; font-weight:bold;">DESCRIEREA JOBULUI</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse-job3"><span class="fa fa-cog" aria-hidden="true"></span> Mecanic auto</a>
+                        </h4>
+                    </div>
+                    <div id="collapse-job3" class="panel-collapse collapse">
+                        <h4 style="padding:10px; font-weight:bold;">CANDIDATUL IDEAL</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <h4 style="padding:10px; font-weight:bold;">DESCRIEREA JOBULUI</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            @{
+        Html.RenderPartial("~/Views/ContactForm/ContactForm.cshtml");
+            }
+            <img src="~/Content/img/happy-job.png" style="width:100%;" />
+        </div>
+    </div>
+</div>
 
