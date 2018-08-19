@@ -3,5 +3,96 @@
     ViewBag.Title = "Jobs";
 }
 
-<h2>Jobs</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h2>Hai in echipa Moba Tehnic!</h2>
+            <h4>Mai jos gasiti o lista cu posturile disponibile:</h4>
+            <note>Pentru a aplica pe unul din posturile disponibile, va rugam completati formularul din dreapta</note>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse-job1"><span class="fa fa-truck" aria-hidden="true"></span> Sofer autocamion</a>
+                        </h4>
+                    </div>
+                    <div id="collapse-job1" class="panel-collapse collapse in">
+                        <h5 style="padding:10px; text-align: justify;">MOBA TEHNIC ABN angajeaza soferi autocamion cu sau fara experienta pentru transport national si international de marfa</h5>
+                        <h4 style="padding:10px; font-weight:bold;">SE OFERA:</h4>
+                        <div id="specs-job">
+                            <p>- loc de munca stabil cu contract de munca pe perioada nedeterminata</p>
+                            <p>- salariu de incadrare</p>
+                            <p>- diurna incepand de la un minim de 60 euro/zi</p>
+                            <p>- bonusuri pentru performanta, diverse alte beneficii</p>
+                            <p>- curse in regim de comunitate sau tur-retur</p>
+                            <p>- garantia efectuarii platii la timp a tuturor drepturilor salariale, fara nici un fel de intarziere</p>
+                            <p>- camioane cu aparate automate pentru plata taxelor de drum ,carduri pentru alimentare carburant</p>
+                        </div>
+                        <h4 style="padding:10px; font-weight:bold;">SE SOLICITA:</h4>
+                        <div id="specs-job">
+                            <p>- permis de conducere CAT B, C+E</p>
+                            <p>- atestat profesional transport marfa</p>
+                            <p>- card tahograf</p>
+                            <p>- respectarea timpilor legali de lucru conform normelor AETR si a orelor de incarcare si de livrare transmise de dispecerat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse-job2"><span class="fa fa-info-circle" aria-hidden="true"></span> Inspector ITP</a>
+                        </h4>
+                    </div>
+                    <div id="collapse-job2" class="panel-collapse collapse">
+                        <h4 style="padding:10px; font-weight:bold;">CANDIDATUL IDEAL</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <h4 style="padding:10px; font-weight:bold;">DESCRIEREA JOBULUI</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse-job3"><span class="fa fa-cog" aria-hidden="true"></span> Mecanic auto</a>
+                        </h4>
+                    </div>
+                    <div id="collapse-job3" class="panel-collapse collapse">
+                        <h4 style="padding:10px; font-weight:bold;">CANDIDATUL IDEAL</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <h4 style="padding:10px; font-weight:bold;">DESCRIEREA JOBULUI</h4>
+                        <div id="specs-job">
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                            <p>- Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            @{
+        Html.RenderPartial("~/Views/ContactForm/ContactForm.cshtml");
+            }
+            <img src="~/Content/img/happy-job.png" style="width:100%;" />
+        </div>
+    </div>
+</div>
 
