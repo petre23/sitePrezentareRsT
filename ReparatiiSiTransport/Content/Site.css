@@ -37,13 +37,17 @@ textarea {
     border-bottom: solid 2px #fff;
 }
 
+.navbar-col{
+    float:left;
+}
+
 .info-nav {
     background: #151515;
 }
 
     .info-nav li {
         color: #fff;
-        padding: 15px 30px;
+        padding: 15px 32px;
         font-size: 16px;
     }
 
@@ -63,6 +67,10 @@ textarea {
 
 #acte-dep {
     background: #08cdf0;
+}
+
+#itp-dep {
+    background: #fda400;
 }
 
 .main-nav li a {
@@ -490,4 +498,13 @@ ul.list-group.list-group-striped li:nth-of-type(even) {
 
 #specs-job{
     padding:10px;
+}
+
+.transp-types {
+    background-color: #536976; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#fff;
+    padding:5px 10px;
+    text-align:justify;
 }

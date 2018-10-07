@@ -11,12 +11,15 @@
 </head>
 <body>
     <nav class="navbar info-nav">
-        <ul class="nav navbar-nav navbar-left">
+        <ul class="nav navbar-nav navbar-col">
             <li><span id="transport-dep">Departament transport:</span> <span style="display:inline-block;"> <i class="fa fa-phone mr-3"></i> <a href="tel:0742 223 088">+40 (0)742 223 088</a></span> | <span style="display:inline-block;"><i class="fa fa-envelope mr-3"></i><a href="mailto:transport.moba@gmail.com"> transport.moba@gmail.com</a></span></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><span id="acte-dep">Departament acte auto:</span> <span style="display:inline-block;"> <i class="fa fa-envelope mr-3"></i> <a href="mailto:acte.autoconsult@gmail.com ">acte.autoconsult@gmail.com</a></span></li>
+        <ul class="nav navbar-nav navbar-col">
+            <li><span id="itp-dep">Departament ITP:</span> <span style="display:inline-block;"> <i class="fa fa-phone mr-3"></i> <a href="tel:0769 325 555">+40 (0)769 325 555</a></span></li>
         </ul>
+            <ul class="nav navbar-nav col">
+                <li><span id="acte-dep">Departament acte auto:</span> <span style="display:inline-block;"> <i class="fa fa-envelope mr-3"></i> <a href="mailto:acte.autoconsult@gmail.com ">acte.autoconsult@gmail.com</a></span></li>
+            </ul>
     </nav>
     <nav class="navbar main-nav" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,7 +45,6 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>@Html.ActionLink("Transport intern si international", "Index", "Transport")</li>
-                <li>@Html.ActionLink("Echipa noastra", "Index", "Team")</li>
                 <li>@Html.ActionLink("Cariere", "Index", "Jobs")</li>
                 <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
             </ul>
@@ -70,7 +72,7 @@
                     <p>
                         <span style="color: #e4e4e4;">
                             Moba tehnic este o companie de transport rutier international infiintata in anul 2012 cu parc propriu de masini cu asigurare CMR / GLOBALA si departament de expeditii cu coordonatori de transport care pot comunica cu clientii dvs. externi...<br />
-                            <strong> <a href="/despre-noi" style="color:#08cdf0;">Citeste&nbsp;mai multe…</a></strong>
+                            <strong>@Html.ActionLink("Citeste mai multe…", "Index", "AboutUs")</strong>
                         </span>
                     </p>
                 </div>
@@ -96,7 +98,7 @@
                         <span style="color: #e4e4e4;">
                             <strong>Acte auto</strong>
                         </span>
-                    </p> <p><span style="color: #e4e4e4;">Luni-Vineri : 8:30 - 16:30</span></p>
+                    </p> <p><span style="color: #e4e4e4;">Luni-Duminica : Non-Stop</span></p>
 
                 </div>
 
