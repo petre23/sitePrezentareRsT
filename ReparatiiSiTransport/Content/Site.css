@@ -347,6 +347,7 @@ ul.list-group.list-group-striped li:nth-of-type(even) {
     text-align: left;
     color: #0c224f;
     font-size:25px;
+    padding-top:40px;
 }
 
 #tip {
