@@ -162,11 +162,21 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\despre-noi-tir.jpg" />
+    <Content Include="Content\img\desprenoi-top.jpg" />
+    <Content Include="Content\img\ftl-image.jpg" />
+    <Content Include="Content\img\happy-job.png" />
+    <Content Include="Content\img\itpPic.jpg" />
     <Content Include="Content\img\logo-footer.png" />
+    <Content Include="Content\img\ltl-image.jpg" />
     <Content Include="Content\img\rp3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\img\TeamUser1.png" />
+    <Content Include="Content\img\transport-goods.jpg" />
     <Content Include="Content\img\truck-banner.jpg" />
+    <Content Include="Content\img\UserTeam2.png" />
+    <Content Include="Content\img\UserTeam3.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -176,6 +186,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
