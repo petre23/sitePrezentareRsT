@@ -3,6 +3,77 @@
     ViewBag.Title = "Acasa";
 }
 
-<div class="container-fluid body-content">
-    <img src="~/Content/img/truck-banner.jpg" style="width:100%;"/>
+<div class="container-fluid body-content" style="position:relative;">
+    <img src="~/Content/img/truck-banner.jpg" style="width:100%;" />
+    <p class="text-banner">Alegeti sa transportati marfa rapid si sigur!</p>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="~/Content/img/car-document.jpg" alt="John" style="width:100%">
+                <h3>Birou acte auto</h3>
+                <p>Oferim servicii profesioniste si rapide ce au la baza inmatricularile auto si aproape orice tip de acte care tin de acest domeniu.</p>
+                @Html.ActionLink("Vezi detalii", "Index", "Documents" , null, new { @class = "card-button" }) 
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="~/Content/img/itp-verificare.jpg" alt="John" style="width:100%">
+                <h3>Verificare ITP</h3>
+                <p>Lucrarile de tip ITP se efectueaza de catre specialistii nostrii, pe standuri ultramoderne care permit efectuarea operatiilor prevazute de legislatie.</p>
+                @Html.ActionLink("Vezi detalii", "Index", "ITP", null, new { @class = "card-button" })
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="~/Content/img/reparatii-auto.jpg" alt="John" style="width:100%">
+                <h3>Reparatii</h3>
+                <p>Tratam cu seriozitate orice problema ar avea autovehiculele care sunt aduse la noi pentru reparatii auto sau pentru revizii si lucrari de intretinere.</p>
+                @Html.ActionLink("Vezi detalii", "Index", "Repairs", null, new { @class = "card-button" })
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="~/Content/img/transport.jpg" alt="John" style="width:100%">
+                <h3>Transport</h3>
+                <p>Firma noastra va pune la dispozitie camioane atat pentru transportul de marfuri generale cat si pentru marfuri speciale</p>
+                @Html.ActionLink("Vezi detalii", "Index", "Transport", null, new { @class = "card-button" })
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <img class="img-responsive" src="~/Content/img/acte-image.jpg" alt="">
+        </div>
+        <!-- /.col-md-8 -->
+        <div class="col-md-4">
+            <h1 style="color:#0c224f">Birou acte auto</h1>
+            <h4>Servicii oferite:</h4>
+            <p><span class="fa fa-check-square" style="color:green;"></span> deplasare la Direcția de Impozite și Taxe pentru inregistrarea masinilor in evidenta;</p>
+            <p><span class="fa fa-check-square" style="color:green;"></span> deplasare la Direcția de Impozite și Taxe pentru scoaterea masinilor din evidenta;</p>
+            <p><span class="fa fa-check-square" style="color:green;"></span> deplasare la Registrul Auto Roman (R.A.R);</p>
+            <p><span class="fa fa-check-square" style="color:green;"></span> servicii de eliberare a numerelor provizorii pentru autovehiculul dumneavoastra;</p>
+            <p><span class="fa fa-check-square" style="color:green;"></span> servicii de eliberare a certificatului de inmatriculare</p><br />
+            @Html.ActionLink("Vezi toate serviciile pentru acte auto", "Index", "Documents", null, new { @class = "orange-button btn btn-default" })
+        </div>
+        <!-- /.col-md-4 -->
+    </div><br />
+    <div class="row">
+        <div class="col-md-4">
+            <h1 style="color:#0c224f">Transport intern si international</h1>
+            <p>Va punem la dispozitie camioane exclusive de marfa, de diverse capacitati si carosari, atat pentru marfuri generale
+            cat si pentru marfuri speciale, cum ar fi: marfurile ADR, frigorifice, substante lichide, camioane care sa preia marfa dvs. in deplina
+            siguranta cu termen de livrare cat mai scurt.</p>
+            <p> Transporturile se efectueaza in regim de camion exclusiv complet (FTL) sau in regim de grupaj (LTL). </p>
+            <p>Opeream o flota proprie de soferi si camioane pentru a garanta calitatea si capacitatea transportului. Mentionam deasemenea
+            ca toate camioanele sunt dotate cu tehnica GPS de ultima generatie. </p>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-8">
+            <img class="img-responsive" src="~/Content/img/transport-tir.jpg" alt="">
+        </div>
+        <!-- /.col-md-8 -->
+    </div><br />
+</div>
+

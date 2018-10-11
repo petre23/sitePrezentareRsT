@@ -61,6 +61,21 @@ textarea {
             color: #fff;
         }
 
+.text-banner {
+    position: absolute;
+    top: 30%;
+    right: 16px;
+    font-size: 42px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .text-banner {
+        font-size: 20px;
+    }
+}
 #transport-dep {
     background: #ff6868;
 }
@@ -509,3 +524,43 @@ ul.list-group.list-group-striped li:nth-of-type(even) {
     padding:5px 10px;
     text-align:justify;
 }
+
+.orange-button {
+    background: #fda400;
+    border: none;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.card title {
+    color: grey;
+    font-size: 18px;
+}
+
+    .card-button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background: #536976; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #292E49, #536976); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+button:hover, a:hover {
+        opacity: 0.7;
+
+    }
