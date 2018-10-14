@@ -3,18 +3,15 @@
     ViewBag.Title = "Acasa";
 }
 
-<div class="container-fluid body-content" style="position:relative;">
-    <img src="~/Content/img/truck-banner.jpg" style="width:100%;" />
-    <p class="text-banner">Alegeti sa transportati marfa rapid si sigur!</p>
-</div>
+
 <div class="container">
-    <div class="row">
+    <div class="row" style="margin-top:3%;">
         <div class="col-md-3 col-sm-6">
             <div class="card">
                 <img src="~/Content/img/car-document.jpg" alt="John" style="width:100%">
                 <h3>Birou acte auto</h3>
                 <p>Oferim servicii profesioniste si rapide ce au la baza inmatricularile auto si aproape orice tip de acte care tin de acest domeniu.</p>
-                @Html.ActionLink("Vezi detalii", "Index", "Documents" , null, new { @class = "card-button" }) 
+                @Html.ActionLink("Vezi detalii", "Index", "Documents", null, new { @class = "card-button" })
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
@@ -44,6 +41,34 @@
     </div>
     <div class="row">
         <div class="col-md-8">
+            <h1 style="color:#0c224f">I.T.P, verificare si montare tahografe</h1>
+            <p>
+                Cu o experienta vasta in domeniul auto, echipa noastra va ofera cele mai bune servicii de ITP.
+                Credem in tot ceea ce facem, de aceea ne mandrim cu numerosii clienti multumiti, cu serviciile de calitate si nu numai.
+            </p>
+            <p>
+                Programarea ITP-ului se poate realiza telefonic sau online completand formularul nostru din site.
+            </p>
+            <p>
+                Vizita pentru Inspectia Tehnica Periodica, constituie pentru multi o sursa de probleme, statia noastra ITP cu autorizatie RAR (Registrul Auto Roman) va sta la dispozitie nu doar cu cele mai bune servicii, dar si cu sugestii si consultanta pentru imbunatatirea calitatii autovehicului dumneavoastra.
+            </p>
+            <p>
+                Statia ITP este gandita si proiectata sa satisfaca pretentiile celor mai pretentiosi clienti la pretul pietei. 
+            </p>
+            <p>
+                Va oferim si servicii de verificare si montare tahografe.
+            </p>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4">
+            @{
+                Html.RenderPartial("~/Views/ContactForm/ContactForm.cshtml");
+            }
+        </div>
+        <!-- /.col-md-8 -->
+    </div><br />
+    <div class="row">
+        <div class="col-md-8">
             <img class="img-responsive" src="~/Content/img/acte-image.jpg" alt="">
         </div>
         <!-- /.col-md-8 -->
@@ -59,15 +84,20 @@
         </div>
         <!-- /.col-md-4 -->
     </div><br />
+
     <div class="row">
         <div class="col-md-4">
             <h1 style="color:#0c224f">Transport intern si international</h1>
-            <p>Va punem la dispozitie camioane exclusive de marfa, de diverse capacitati si carosari, atat pentru marfuri generale
-            cat si pentru marfuri speciale, cum ar fi: marfurile ADR, frigorifice, substante lichide, camioane care sa preia marfa dvs. in deplina
-            siguranta cu termen de livrare cat mai scurt.</p>
+            <p>
+                Va punem la dispozitie camioane exclusive de marfa, de diverse capacitati si carosari, atat pentru marfuri generale
+                cat si pentru marfuri speciale, cum ar fi: marfurile ADR, frigorifice, substante lichide, camioane care sa preia marfa dvs. in deplina
+                siguranta cu termen de livrare cat mai scurt.
+            </p>
             <p> Transporturile se efectueaza in regim de camion exclusiv complet (FTL) sau in regim de grupaj (LTL). </p>
-            <p>Opeream o flota proprie de soferi si camioane pentru a garanta calitatea si capacitatea transportului. Mentionam deasemenea
-            ca toate camioanele sunt dotate cu tehnica GPS de ultima generatie. </p>
+            <p>
+                Opeream o flota proprie de soferi si camioane pentru a garanta calitatea si capacitatea transportului. Mentionam deasemenea
+                ca toate camioanele sunt dotate cu tehnica GPS de ultima generatie.
+            </p>
         </div>
         <!-- /.col-md-4 -->
         <div class="col-md-8">
