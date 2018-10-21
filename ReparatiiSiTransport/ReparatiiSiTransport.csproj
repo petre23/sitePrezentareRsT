@@ -162,19 +162,25 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\acte-image.jpg" />
+    <Content Include="Content\img\car-document.jpg" />
     <Content Include="Content\img\despre-noi-tir.jpg" />
     <Content Include="Content\img\desprenoi-top.jpg" />
     <Content Include="Content\img\favicon-moba.jpg" />
     <Content Include="Content\img\ftl-image.jpg" />
     <Content Include="Content\img\happy-job.png" />
+    <Content Include="Content\img\itp-verificare.jpg" />
     <Content Include="Content\img\itpPic.jpg" />
     <Content Include="Content\img\logo-footer.png" />
     <Content Include="Content\img\ltl-image.jpg" />
+    <Content Include="Content\img\reparatii-auto.jpg" />
     <Content Include="Content\img\rp3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\img\TeamUser1.png" />
     <Content Include="Content\img\transport-goods.jpg" />
+    <Content Include="Content\img\transport-tir.jpg" />
+    <Content Include="Content\img\transport.jpg" />
     <Content Include="Content\img\truck-banner.jpg" />
     <Content Include="Content\img\UserTeam2.png" />
     <Content Include="Content\img\UserTeam3.jpg" />
