@@ -9,9 +9,9 @@ namespace ReparatiiSiTransport.Controllers
     public class AboutUsController : Controller
     {
         // GET: AboutUs
-        public ActionResult Index()
+        public ActionResult Firma_de_transport_reparatii()
         {
-            return View();
+            return View("~/Views/AboutUs/Firma-de-transport-reparatii.cshtml");
         }
     }
 }

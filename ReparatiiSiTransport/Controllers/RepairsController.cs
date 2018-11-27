@@ -9,9 +9,9 @@ namespace ReparatiiSiTransport.Controllers
     public class RepairsController : Controller
     {
         // GET: Repairs
-        public ActionResult Index()
+        public ActionResult Firma_reparatii_auto_masini()
         {
-            return View();
+            return View("~/Views/Repairs/Firma-reparatii-auto-masini.cshtml");
         }
     }
 }

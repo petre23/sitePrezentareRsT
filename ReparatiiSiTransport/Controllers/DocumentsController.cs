@@ -9,9 +9,9 @@ namespace ReparatiiSiTransport.Controllers
     public class DocumentsController : Controller
     {
         // GET: Documents
-        public ActionResult Index()
+        public ActionResult Acte_auto_inmatriculare_impozite_taxe()
         {
-            return View();
+            return View("~/Views/Documents/Acte-auto-inmatriculare-impozite-taxe.cshtml");
         }
     }
 }

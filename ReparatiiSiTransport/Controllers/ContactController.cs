@@ -9,9 +9,9 @@ namespace ReparatiiSiTransport.Controllers
     public class ContactController : Controller
     {
         // GET: Contact
-        public ActionResult Index()
+        public ActionResult Companie_de_transport_reparatii_contact()
         {
-            return View();
+            return View("~/Views/Contact/Companie-de-transport-reparatii-contact.cshtml");
         }
     }
 }

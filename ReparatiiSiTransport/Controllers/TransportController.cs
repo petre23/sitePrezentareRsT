@@ -9,9 +9,9 @@ namespace ReparatiiSiTransport.Controllers
     public class TransportController : Controller
     {
         // GET: Transport
-        public ActionResult Index()
+        public ActionResult Transport_marfa_intern_international()
         {
-            return View();
+            return View("~/Views/Transport/Transport-marfa-intern-international.cshtml");
         }
     }
 }

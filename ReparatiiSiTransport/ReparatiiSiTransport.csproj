@@ -162,28 +162,66 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\img\acte-image.jpg" />
-    <Content Include="Content\img\car-document.jpg" />
-    <Content Include="Content\img\despre-noi-tir.jpg" />
-    <Content Include="Content\img\desprenoi-top.jpg" />
-    <Content Include="Content\img\favicon-moba.jpg" />
-    <Content Include="Content\img\ftl-image.jpg" />
-    <Content Include="Content\img\happy-job.png" />
-    <Content Include="Content\img\itp-verificare.jpg" />
-    <Content Include="Content\img\itpPic.jpg" />
-    <Content Include="Content\img\logo-footer.png" />
-    <Content Include="Content\img\ltl-image.jpg" />
-    <Content Include="Content\img\reparatii-auto.jpg" />
-    <Content Include="Content\img\rp3.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Content\img\acte-image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\img\TeamUser1.png" />
-    <Content Include="Content\img\transport-goods.jpg" />
-    <Content Include="Content\img\transport-tir.jpg" />
-    <Content Include="Content\img\transport.jpg" />
-    <Content Include="Content\img\truck-banner.jpg" />
-    <Content Include="Content\img\UserTeam2.png" />
-    <Content Include="Content\img\UserTeam3.jpg" />
+    <Content Include="Content\img\car-document.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\despre-noi-tir.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\desprenoi-top.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\favicon-moba.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\ftl-image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\happy-job.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\itp-verificare.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\itpPic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\logo-footer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\ltl-image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\reparatii-auto.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\rp3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\TeamUser1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\transport-goods.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\transport-tir.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\transport.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\truck-banner.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\UserTeam2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\UserTeam3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -217,13 +255,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\AboutUs\Index.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
-    <Content Include="Views\Itp\Index.cshtml" />
-    <Content Include="Views\Repairs\Index.cshtml" />
-    <Content Include="Views\Transport\Index.cshtml" />
-    <Content Include="Views\Documents\Index.cshtml" />
-    <Content Include="Views\Jobs\Index.cshtml" />
+    <Content Include="Views\AboutUs\Firma-de-transport-reparatii.cshtml" />
+    <Content Include="Views\Contact\Companie-de-transport-reparatii-contact.cshtml" />
+    <Content Include="Views\Itp\Itp-inspectie-tehnica-periodica-craiova.cshtml" />
+    <Content Include="Views\Repairs\Firma-reparatii-auto-masini.cshtml" />
+    <Content Include="Views\Transport\Transport-marfa-intern-international.cshtml" />
+    <Content Include="Views\Documents\Acte-auto-inmatriculare-impozite-taxe.cshtml" />
+    <Content Include="Views\Jobs\Cariere-sofer-reparatii-craiova.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
     <Content Include="Views\ContactForm\ContactForm.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />

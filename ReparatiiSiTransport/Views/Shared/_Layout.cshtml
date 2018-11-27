@@ -9,6 +9,37 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="shortcut icon" type="image/x-icon" href="~/Content/img/favicon-moba.jpg" />
+
+    @switch (ViewBag.Title)
+    {
+        case "Firma de transport intern si international | Reparatii auto | Verificare ITP":
+            <meta name="description" content="Firma de transport intern si international rapid. Oferim deasemenea servicii de verificare ITP si va ajutam sa intocmiti toate tipuri de acte auto. Firma este specializata si in reparatii auto de diverse tipuri.">
+            break;
+        case "Despre firma Moba Tehnic":
+            <meta name="description" content="Firma de transport Moba Tehnic este o firma in plina dezvoltare si cu experienta in transporturi de marfa, intocmire acte auto, ITP.">
+            break;
+        case "Acte auto | Certificate de inmatriculare | Asigurari RCA":
+            <meta name="description" content="Moba Tehnic va pune la dispozitie urmatoarele servicii: servicii de eliberare a certificatului de inmatriculare, intocmire fise de inmatriculare, eliberarea certificatului de inmatriculare, asigurari RCA, CASCO, malpraxis, calatorie si altele.">
+            break;
+        case "ITP auto Craiova":
+            <meta name="description" content="Specialistii nostri va stau la dispozitie pentru inspectia tehnica periodica a masinii dvs. Toate lucrarile de tip ITP se efectueaza de catre specialistii nostrii, pe standuri ultramoderne care permit efectuarea operatiilor prevazute de legislatie.">
+            break;
+        case "Transport intern si international pentru diverse tipuri de marfuri de diverse capacitati":
+            <meta name="description" content="Va punem la dispozitie camioane exclusive de marfa, indiferent de cantitate si dimensiuni asiguram asiguram transportul in conditii optime si sigure. Detinem o suita de camioane cu prelata, duba frigorifica, trailer, bena.">
+            break;
+        case "Locuri de munca Moba Tehnic Craiova":
+            <meta name="description" content="Locuri de munca sofer camion, mecanic, inspector ITP Craiova">
+            break;
+        case "Contact":
+            <meta name="description" content="Companie de transporturi, reparatii si verificare ITP in Craiova">
+            break;
+    }
+
+    <meta name="expires" content="never" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
 </head>
 <body>
     <nav class="navbar info-nav">
@@ -33,21 +64,21 @@
             </button>
 
         </div>
-        <a class="navbar-brand" href="@Url.Action("Index", "Home", null)"><img src="~/Content/img/rp3.png" /></a>
+        <a class="navbar-brand" href="@Url.Action("Index", "Home", null)"><img src="~/Content/img/rp3.png" alt="Moba Tehnic firma de transporturi marfa " /></a>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-left">
                 <li>@Html.ActionLink("Acasa", "Index", "Home")</li>
-                <li>@Html.ActionLink("Despre noi", "Index", "AboutUs")</li>
-                <li>@Html.ActionLink("Birou acte auto", "Index", "Documents")</li>
-                <li>@Html.ActionLink("I.T.P.", "Index", "Itp")</li>
+                <li>@Html.ActionLink("Despre noi", "Firma_de_transport_reparatii", "AboutUs")</li>
+                <li>@Html.ActionLink("Birou acte auto", "Acte_auto_inmatriculare_impozite_taxe", "Documents")</li>
+                <li>@Html.ActionLink("I.T.P.", "Itp_inspectie_tehnica_periodica_craiova", "Itp")</li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li>@Html.ActionLink("Transport intern si international", "Index", "Transport")</li>
-                <li>@Html.ActionLink("Reparatii", "Index", "Repairs")</li>
-                <li>@Html.ActionLink("Cariere", "Index", "Jobs")</li>
-                <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+                <li>@Html.ActionLink("Transport intern si international", "Transport_marfa_intern_international", "Transport")</li>
+                <li>@Html.ActionLink("Reparatii", "Firma_reparatii_auto_masini", "Repairs")</li>
+                <li>@Html.ActionLink("Cariere", "Cariere_sofer_reparatii_craiova", "Jobs")</li>
+                <li>@Html.ActionLink("Contact", "Companie_de_transport_reparatii_contact", "Contact")</li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
@@ -73,7 +104,7 @@
                     <p>
                         <span style="color: #e4e4e4;">
                             Moba tehnic este o companie de transport rutier international infiintata in anul 2012 cu parc propriu de masini cu asigurare CMR / GLOBALA si departament de expeditii cu coordonatori de transport care pot comunica cu clientii dvs. externi...<br />
-                            <strong>@Html.ActionLink("Citeste mai multe…", "Index", "AboutUs")</strong>
+                            <strong>@Html.ActionLink("Citeste mai multe…", "Firma_de_transport_reparatii", "AboutUs")</strong>
                         </span>
                     </p>
                 </div>
@@ -130,7 +161,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="footerLogo">
-                        <img src="./Content/img/logo-footer.png" style="width:100%;">
+                        <img src="../Content/img/logo-footer.png" style="width:100%;" alt="Acte auto si ITP Craiova">
                     </div>
                 </div>
                 <!-- Grid column -->
