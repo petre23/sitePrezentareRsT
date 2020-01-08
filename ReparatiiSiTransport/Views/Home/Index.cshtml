@@ -5,42 +5,87 @@
 
 <div class="container">
     <div class="row" style="margin-top:3%;">
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-                <img src="~/Content/img/car-document.jpg" alt="Acte auto Craiova" style="width:100%">
-                <h3>Birou acte auto</h3>
-                <p>Oferim servicii profesioniste si rapide ce au la baza inmatricularile auto si aproape orice tip de acte care tin de acest domeniu.</p>
-                @Html.ActionLink("Vezi detalii", "Acte_auto_inmatriculare_impozite_taxe", "Documents", null, new { @class = "card-button" })
+        <div class="col-lg-12 col-sm-12">
+            <div class="row">
+                <div class="col-md-4 col-sm-4" align="left">
+                    <div class="card hvr-float">
+                        <img src="~/Content/img/tachograph.jpeg" alt="Acte auto Craiova" style="width:100%">
+                        <h3> <strong> Service Tahografe </strong> </h3>
+                        <div class="card-pharagraph">
+                            <p>
+                                <strong> Tahografe Inteligente &#183; Tahografe Digitale &#183; Tahografe Analogice </strong>
+                            </p>
+                            <p>
+                                Asiguram service complet si dedicat pentru majoritatea modelelor de tahografe din comert.
+                            </p>
+                        </div>
+                        @Html.ActionLink("Vezi detalii", "Tahografe_Inteligente_Craiova", "Tachographs", null, new { @class = "card-button" })
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4" align="center">
+                    <div class="card">
+                        <img src="~/Content/img/heater.jpg " alt="Acte auto Craiova" style="width:100%">
+                        <h3> <strong> Service Incalzitoare </strong></h3>
+                        <div class="card-pharagraph">
+                            <p>
+                                <strong> Webastro &#183; Eberspacher</strong>
+                            </p>
+                            <p >Asiguram service complet si dedicat pentru incalzitoarele Webasto. Detinem piese originale pentru reparatii direct din stoc.</p>
+                        </div>
+                        @Html.ActionLink("Vezi detalii", "Incalzitoare_Webastro_Eberspacher", "Heaters", null, new { @class = "card-button" })
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4" align="right">
+                    <div class="card">
+                        <img src="~/Content/img/car-document.jpg" alt="Acte auto Craiova" style="width:100%">
+                        <h3> <strong> Birou acte auto </strong></h3>
+                        <div class="card-pharagraph">
+                            <p>
+                                <strong> Inmatriculare &#183; Radiere &#183; Contracte </strong>
+                            </p>
+                            <p>Oferim servicii profesioniste si rapide ce au la baza inmatricularile auto si aproape orice tip de acte care tin de acest domeniu.</p>
+                        </div>
+                        @Html.ActionLink("Vezi detalii", "Acte_auto_inmatriculare_impozite_taxe", "Documents", null, new { @class = "card-button" })
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-                <img src="~/Content/img/itp-verificare.jpg" alt="Firma ITP Craiova" style="width:100%">
-                <h3>Verificare ITP</h3>
-                <p>Lucrarile de tip ITP se efectueaza de catre specialistii nostrii, pe standuri ultramoderne care permit efectuarea operatiilor prevazute de legislatie.</p>
-                @Html.ActionLink("Vezi detalii", "Itp_inspectie_tehnica_periodica_craiova", "ITP", null, new { @class = "card-button" })
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-                <img src="~/Content/img/reparatii-auto.jpg" alt="Firma de reparatii Craiova" style="width:100%">
-                <h3>Reparatii</h3>
-                <p>Tratam cu seriozitate orice problema ar avea autovehiculele care sunt aduse la noi pentru reparatii auto sau pentru revizii si lucrari de intretinere.</p>
-                @Html.ActionLink("Vezi detalii", "Firma_reparatii_auto_masini", "Repairs", null, new { @class = "card-button" })
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-                <img src="~/Content/img/transport.jpg" alt="Transport international" style="width:100%">
-                <h3>Transport</h3>
-                <p>Firma noastra va pune la dispozitie camioane atat pentru transportul de marfuri generale cat si pentru marfuri speciale</p>
-                @Html.ActionLink("Vezi detalii", "Transport_marfa_intern_international", "Transport", null, new { @class = "card-button" })
+            <div class="row">
+                <div class="col-md-4 col-sm-4" align="left">
+                        <div class="card">
+                            <img src="~/Content/img/itp-verificare.jpg" alt="Firma ITP Craiova" style="width:100%">
+                            <h3> <strong> Verificare ITP </strong></h3>
+                            <div class="card-pharagraph">
+                                <p>Lucrarile de tip ITP se efectueaza de catre specialistii nostrii, pe standuri ultramoderne care permit efectuarea operatiilor prevazute de legislatie.</p>
+                            </div>
+                            @Html.ActionLink("Vezi detalii", "Itp_inspectie_tehnica_periodica_craiova", "ITP", null, new { @class = "card-button" })
+                        </div>
+                    </div>
+                <div class="col-md-4 col-sm-4" align="center">
+                    <div class="card">
+                        <img src="~/Content/img/reparatii-auto.jpg" alt="Firma de reparatii Craiova" style="width:100%">
+                        <h3> <strong> Reparatii </strong></h3>
+                        <div class="card-pharagraph">
+                            <p>Tratam cu seriozitate orice problema ar avea autovehiculele care sunt aduse la noi pentru reparatii auto sau pentru revizii si lucrari de intretinere.</p>
+                        </div>
+                        @Html.ActionLink("Vezi detalii", "Firma_reparatii_auto_masini", "Repairs", null, new { @class = "card-button" })
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4" align="right">
+                    <div class="card">
+                        <img src="~/Content/img/transport.jpg" alt="Transport international" style="width:100%">
+                        <h3> <strong> Transport </strong></h3>
+                        <div class="card-pharagraph">
+                            <p>Firma noastra va pune la dispozitie camioane atat pentru transportul de marfuri generale cat si pentru marfuri speciale</p>
+                        </div>
+                        @Html.ActionLink("Vezi detalii", "Transport_marfa_intern_international", "Transport", null, new { @class = "card-button" })
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-8">
-            <h1 style="color:#0c224f">I.T.P, verificare si montare tahografe</h1>
+            <h1 style="color:#0c224f">I.T.P. verificare si montare tahografe</h1>
             <p>
                 Cu o experienta vasta in domeniul auto, echipa noastra va ofera cele mai bune servicii de ITP.
                 Credem in tot ceea ce facem, de aceea ne mandrim cu numerosii clienti multumiti, cu serviciile de calitate si nu numai.
