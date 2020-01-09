@@ -46,7 +46,20 @@ textarea {
 
 
 .info-nav {
-    background: #151515;
+    background: black;
+    position: fixed;
+    top: 100vh;
+    transform: translateY(-100%);
+    width: 100%;
+    opacity: 0.85;
+}
+
+.info-nav:hover {
+    opacity: 1;
+}
+
+.info-nav ul {
+    margin-bottom: 5px!important;
 }
 
     .info-nav li {
@@ -55,15 +68,15 @@ textarea {
         font-size: 14px;
     }
 
-        .info-nav li span {
-            padding: 5px;
-            border-radius: 10px;
-        }
+.info-nav li span {
+    padding: 5px;
+    border-radius: 10px;
+}
 
-        .info-nav li a {
-            text-decoration: none;
-            color: #fff;
-        }
+.info-nav li a {
+    text-decoration: none;
+    color: #fff;
+}
 
 .text-banner {
     position: absolute;
