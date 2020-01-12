@@ -601,7 +601,7 @@ button:hover, a:hover {
     padding-right: 20px;
 }
 
-    .text-webastro h1 {
+.text-webastro h1 {
         color: white;
     }
 .text-webastro p {
@@ -610,6 +610,16 @@ button:hover, a:hover {
     font-size: 17px;
     }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .container-webastro {
+        height: 40px;
+        padding-bottom: 300px;
+    }
+
+    .text-webastro p {
+        font-size: 10px;
+    }
+}
 
 .hvrbox,
 .hvrbox * {
