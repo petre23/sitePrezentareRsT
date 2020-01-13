@@ -676,3 +676,57 @@ button:hover, a:hover {
      -ms-transform: translate(-50%, -50%);
      transform: translate(-50%, -50%);
 }
+
+.modal-header-custom {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0 !important;
+    background-color: #0c224f;
+    color: white;
+}
+
+.modal-content {
+    padding: 2%;
+    box-shadow: none;
+}
+
+.modal-with-video-content-size {
+    height: 650px;
+    width: 600px;
+    overflow-y: scroll;
+}
+
+.modal-with-image-content-size {
+    width: 600px;
+}
+
+.product-modal-image {
+    border: 1px solid black;
+}
+
+.modal-close-icon{
+    opacity: 1!important;
+    color: white;
+}
+
+.modal-close-icon:hover {
+    opacity: 1 !important;
+    color: white;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.modal-contact-info {
+    padding-top: 2%;
+}
+
+.modal-body-custom {
+    padding-bottom: 0;
+}
+
+.product-image-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

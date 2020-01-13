@@ -200,6 +200,13 @@
     <Content Include="Content\img\ltl-image.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\img\products\tahographs\TActia.jpg" />
+    <Content Include="Content\img\products\tahographs\TEFAS.jpg" />
+    <Content Include="Content\img\products\tahographs\TEGK.jpg" />
+    <Content Include="Content\img\products\tahographs\TFKON4.jpg" />
+    <Content Include="Content\img\products\tahographs\TS2.jpg" />
+    <Content Include="Content\img\products\tahographs\TSimens.jpg" />
+    <Content Include="Content\img\products\tahographs\TStone.jpg" />
     <Content Include="Content\img\reparatii-auto.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -275,9 +282,17 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Heaters\Incalzitoare-Webastro-Eberspacher.cshtml" />
     <Content Include="Views\Tachographs\Tahografe-Inteligente-Craiova.cshtml" />
+    <Content Include="Views\Modals\Tahographs\ActiaProduct.cshtml" />
+    <Content Include="Views\Modals\Tahographs\EFAS4Product.cshtml" />
+    <Content Include="Views\Modals\Tahographs\EFAS3Product.cshtml" />
+    <Content Include="Views\Modals\Tahographs\SiemensVDOProduct.cshtml" />
+    <Content Include="Views\Modals\Tahographs\StoneridgeProduct.cshtml" />
+    <Content Include="Views\Modals\Tahographs\EGK100Product.cshtml" />
+    <Content Include="Views\Modals\Tahographs\Siemens1324Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\img\products\heaters\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
