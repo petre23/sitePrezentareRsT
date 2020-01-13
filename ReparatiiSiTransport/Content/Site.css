@@ -34,9 +34,7 @@ textarea {
 
 .main-nav {
     color: white;
-    background: #536976; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #292E49; /* fallback for old browsers */
     border-bottom: solid 2px #fff;
 }
 
@@ -195,9 +193,7 @@ textarea {
 }
 
 .panel-default > .panel-heading {
-    background: #536976; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0c224f;
 }
 
 .panel-title > a {
@@ -523,12 +519,10 @@ ul.list-group.list-group-striped li:nth-of-type(even) {
 }
 
 .transp-types {
-    background-color: #536976; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color:#fff;
-    padding:5px 10px;
-    text-align:justify;
+    background-color: #0c224f;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: justify;
 }
 
 .orange-button {
@@ -558,20 +552,18 @@ ul.list-group.list-group-striped li:nth-of-type(even) {
     font-size: 18px;
 }
 
-    .card-button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background: #536976; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #292E49, #536976); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        font-size: 18px;
-    }
+.card-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: #0c224f; /* fallback for old browsers */
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
 
 button:hover, a:hover {
     color: deepskyblue;
