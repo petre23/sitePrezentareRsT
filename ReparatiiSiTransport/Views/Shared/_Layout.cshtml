@@ -74,6 +74,16 @@
             </li>
         </ul>
     </nav>
+    <nav class="navbar cookies-bar" id="cookiesBar">
+        <div class="row">
+            <div class="col-md-9 col-sm-9 col-lg-9" align="right" style="padding-top:5px; color:white">
+                <strong>Acest site foloseşte cookies! Continuarea navigării implică acceptarea lor.</strong> <a href="@Url.Action("Index", "Cookies", null)" style="color:darkblue"> Mai multe informatii despre cookie-uri</a>
+            </div>
+            <div class="col-md-3 col-sm-3 col-lg-3" align="left">
+                <button type="button" class="btn btn-default" onclick="saveCookiesPreferences()">OK</button>
+            </div>
+        </div>
+    </nav>
     <nav class="navbar main-nav" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -91,12 +101,12 @@
 
             <ul class="nav navbar-nav navbar-left">
                 <li>@Html.ActionLink("Despre noi", "Firma_de_transport_reparatii", "AboutUs")</li>
-                <li>@Html.ActionLink("Tahografe", "Tahografe-Inteligente-Craiova", "Tachographs")</li>
+                <li>@Html.ActionLink("Tahografe", "Tahografe_Inteligente_Craiova", "Tachographs")</li>
                 <li>@Html.ActionLink("Birou acte auto", "Acte_auto_inmatriculare_impozite_taxe", "Documents")</li>
                 <li>@Html.ActionLink("I.T.P.", "Itp_inspectie_tehnica_periodica_craiova", "Itp")</li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li>@Html.ActionLink("Incalzitoare", "Incalzitoare-Webastro-Eberspacher", "Heaters")</li>
+                <li>@Html.ActionLink("Incalzitoare", "Incalzitoare_Webastro_Eberspacher", "Heaters")</li>
                 <li>@Html.ActionLink("Transport intern si international", "Transport_marfa_intern_international", "Transport")</li>
                 <li>@Html.ActionLink("Cariere", "Cariere_sofer_reparatii_craiova", "Jobs")</li>
                 <li>@Html.ActionLink("Contact", "Companie_de_transport_reparatii_contact", "Contact")</li>
@@ -204,3 +214,25 @@
     </footer>
 </body>
 </html>
+
+<script type="text/javascript">
+    saveCookiesPreferences = function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        showCookiesBar();
+    };
+    showCookiesBar = function () {
+        let cookiesAccepted = localStorage.getItem("cookiesAccepted");
+        let showCookieBar = true;
+        var cookiesBar = $("#cookiesBar");
+
+        if (cookiesAccepted && cookiesAccepted == "true")
+            showCookieBar = false;
+
+        if (showCookieBar) {
+            cookiesBar.show();
+        } else {
+            cookiesBar.hide();
+        }
+    };
+    showCookiesBar();
+</script>

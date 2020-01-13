@@ -722,3 +722,9 @@ button:hover, a:hover {
     align-items: center;
     justify-content: center;
 }
+
+.cookies-bar {
+    min-height: 30px !important;
+    background-color: #39A8F2;
+    display: none;
+}

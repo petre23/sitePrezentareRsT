@@ -145,6 +145,7 @@
     <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContactFormController.cs" />
+    <Compile Include="Controllers\CookiesController.cs" />
     <Compile Include="Controllers\DocumentsController.cs" />
     <Compile Include="Controllers\HeatersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -289,6 +290,7 @@
     <Content Include="Views\Modals\Tahographs\StoneridgeProduct.cshtml" />
     <Content Include="Views\Modals\Tahographs\EGK100Product.cshtml" />
     <Content Include="Views\Modals\Tahographs\Siemens1324Product.cshtml" />
+    <Content Include="Views\Cookies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
