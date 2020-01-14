@@ -144,11 +144,16 @@
         <h2>Oferta noastra de incalzitoare auto <span style="font-weight:bold; text-transform:uppercase;">Eberspacher</span>. Oferim montaj si service autorizat cu piese originale</h2>
         <div class="col-sm-3">
             <div class="hvrbox">
-                <img src="~/Content/img/img-prod.jpg" alt="" class="hvrbox-layer_bottom">
-                <div class="hvrbox-layer_top">
-                    <div class="hvrbox-text"><button type="button" class="btn btn-default">Vezi detalii</button></div>
+                <div class="product-image-div" style="height:150px; max-height:150px;">
+                    <img src="~/Content/img/products/heaters/Eberspaecher-Airtronic-D2.jpg" alt="" class="hvrbox-layer_bottom">
                 </div>
-                <p style="font-size: 17px; text-align:center;">Demo Product</p>
+                <div class="hvrbox-layer_top">
+                    <div class="hvrbox-text"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#eberspaecher-d2-product-modal">Vezi detalii</button></div>
+                </div>
+                <p style="font-size: 17px; text-align:center;">
+                    Eberspaecher Airtronic D2
+                </p>
+                @RenderPage("~/Views/Modals/Heaters/EberspaecherAirtronicD2Product.cshtml")
             </div>
         </div>
         <div class="col-sm-3">
