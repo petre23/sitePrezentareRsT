@@ -75,14 +75,27 @@
             <h2>Oferta noastra de incalzitoare auto <span style="font-weight:bold">WEBASTO</span>. Oferim montaj si service autorizat</h2>
             <div class="col-sm-3">
                 <div class="hvrbox">
-                    <img src="~/Content/img/img-prod.jpg" alt="" class="hvrbox-layer_bottom">
-                    <div class="hvrbox-layer_top">
-                        <div class="hvrbox-text"><button type="button" class="btn btn-default">Vezi detalii</button></div>
+                    <div class="product-image-div" style="height:150px; max-height:150px;">
+                        <img src="~/Content/img/products/heaters/Webasto3500ST.jpg" class="hvrbox-layer_bottom">
                     </div>
-                    <p style="font-size: 17px; text-align:center;">Demo Product</p>
+                    <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#webasto2000ST-product-modal">Vezi detalii</button></div>
+                    </div>
+                    <p style="font-size: 17px; text-align:center;">Webasto 2000ST</p>
+                    @RenderPage("~/Views/Modals/Heaters/Webasto2000ST.cshtml")
                 </div>
             </div>
             <div class="col-sm-3">
+                <div class="hvrbox">
+                    <div class="product-image-div" style="height:150px; max-height:150px;">
+                        <img src="~/Content/img/products/heaters/Webasto3500ST.jpg" class="hvrbox-layer_bottom">
+                    </div>
+                    <div class="hvrbox-layer_top">
+                        <div class="hvrbox-text"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#webasto3500ST-product-modal">Vezi detalii</button></div>
+                    </div>
+                    <p style="font-size: 17px; text-align:center;">Webasto 3500ST</p>
+                    @RenderPage("~/Views/Modals/Heaters/Webasto3500ST.cshtml")
+                </div>
             </div>
             <div class="col-sm-3">
             </div>
