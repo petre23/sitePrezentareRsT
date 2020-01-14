@@ -291,6 +291,9 @@
     <Content Include="Views\Modals\Tahographs\EGK100Product.cshtml" />
     <Content Include="Views\Modals\Tahographs\Siemens1324Product.cshtml" />
     <Content Include="Views\Cookies\Index.cshtml" />
+    <Content Include="Views\Modals\Heaters\EberspaecherAirtronicD2Product.cshtml" />
+    <Content Include="Views\Modals\Heaters\Webasto2000ST.cshtml" />
+    <Content Include="Views\Modals\Heaters\Webasto3500ST.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
